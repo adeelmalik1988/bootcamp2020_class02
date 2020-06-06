@@ -34,10 +34,7 @@ jobs:
         cmd: install #installing yarn package
 
     - name: Changing dir
-      run: cd ./second_asg
-      
-    - name: Creating Build 
-      run: yarn build
+      run: {"cd ./second_asg", "yarn build"}
     
     - name: Installing surge
       run: npm install -g surge
