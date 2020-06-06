@@ -34,6 +34,7 @@ jobs:
         cmd: install #installing yarn package
 
     - name: Creating Build
+      run: cd second_asg
       run: yarn build
     
     - name: Installing surge
