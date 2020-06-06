@@ -33,8 +33,8 @@ jobs:
       with:
         cmd: install #installing yarn package
 
-    - name: Changing dir
-      run: {"cd ./second_asg", "yarn build"}
+    - name: Build with yarn
+      run: yarn build
     
     - name: Installing surge
       run: npm install -g surge
