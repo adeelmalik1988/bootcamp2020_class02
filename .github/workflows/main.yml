@@ -33,8 +33,10 @@ jobs:
       with:
         cmd: install #installing yarn package
 
-    - name: Creating Build
-      run: cd second_asg
+    - name: Changing dir
+      run: cd ./second_asg
+      
+    - name: Creating Build 
       run: yarn build
     
     - name: Installing surge
