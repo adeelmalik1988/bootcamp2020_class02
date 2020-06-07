@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Dish from './dish';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Now I have made changes to same app.js file
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dish mainCourse='Chiken Makhni' sweetDish='Gulab Jamun'/>
+
     </div>
   );
 }
